@@ -1,3 +1,5 @@
+import { Step } from './types';
+
 export const EXAMPLE_IMAGES = [
   {
     id: '1',
@@ -27,3 +29,108 @@ export const APPLES_REFERENCE = "https://lh3.googleusercontent.com/aida-public/A
 export const APPLES_SKETCH = "https://lh3.googleusercontent.com/aida-public/AB6AXuAPG8X_Peqf2C0pNaNM1phciWHxIDS6FOMrBKa_QT0i9GvSz4KGwhz72JhURECN7fh0Epe2eH191ikk7kdfK-ifXJCOJ9WFxz4a7W5_bzWADgPvYGfiBCLd-q_iPjDOWVMgUKkELJpDk1A8AUHWi7-l960hM_zKfNiPecLcsIhCDZCUae0JykcmshpfldJX6NyjirUmhK1YgteRuqN_LNylKO3_f5lNGYKyREmlXjsY5O1iZDDnqhqdfZ8dgeGTbfkZh1fOgnjvONQ";
 
 export const PORTRAIT_REFERENCE = "https://lh3.googleusercontent.com/aida-public/AB6AXuCECtrF_RUrYwSNeNUEcHtLrr6hlWd5hYBmahZzo7By_9xp3hgs5jeEVDJH_W4U29pPm8K2wZh-DALpjPnRF7JZEsvHTuEuuqACEXhB_dYHlZfrilz1PNF9KrhnIgyxC1vA09yJI84deMk25j7KThwaDOejyGQILWZZGl9OL_vnN3VH0l1HD11Om8wDm26cEDVl0kyjvI7mzqk34M6_gKk7JNPn_knXi5KVmBrGWGJLVjtPUc5ssogMdH4_9Idx1Fox-jrTUcQWL9k";
+
+// Learning steps for the guided drawing experience
+export const LEARNING_STEPS: Step[] = [
+  {
+    id: '1',
+    title: 'Basic Outline',
+    description: 'Start by tracing the main contours and shapes of your subject.',
+    detailedInstructions: `Begin with light, loose strokes to establish the overall composition. Focus on the largest shapes first - these will serve as your foundation.
+
+1. Identify the main subject and its bounding shape
+2. Lightly sketch the outermost contours
+3. Break complex forms into simple geometric shapes
+4. Don't worry about details yet - focus on placement
+
+Take your time with this step - a solid outline makes everything else easier!`,
+    tips: [
+      'Use light pressure - you can always darken lines later',
+      'Step back frequently to check proportions',
+      'Turn your reference upside down to see shapes more objectively',
+      'Use your pencil as a measuring tool'
+    ],
+    difficulty: 'easy'
+  },
+  {
+    id: '2',
+    title: 'Proportions & Structure',
+    description: 'Measure and mark key proportions to ensure accuracy.',
+    detailedInstructions: `Now that you have a basic outline, refine the proportions. This step is crucial for achieving a likeness to your reference.
+
+1. Use the "sight-size" method to compare measurements
+2. Mark horizontal and vertical alignment points
+3. Check negative spaces (the spaces around objects)
+4. Adjust your outline based on these measurements
+
+Remember: It's easier to fix proportions now than after you've added details!`,
+    tips: [
+      'Compare widths to heights of different elements',
+      'Look for alignment between distant points',
+      'Squint your eyes to simplify what you see',
+      'Use a grid overlay if needed for complex subjects'
+    ],
+    difficulty: 'medium'
+  },
+  {
+    id: '3',
+    title: 'Details & Textures',
+    description: 'Add fine details, textures, and secondary elements.',
+    detailedInstructions: `With accurate proportions in place, start adding the details that bring your drawing to life.
+
+1. Work from large details to small
+2. Add secondary shapes and features
+3. Begin indicating textures with appropriate marks
+4. Maintain consistent detail level across the drawing
+
+Avoid the temptation to over-detail one area while neglecting others!`,
+    tips: [
+      'Vary your line weight for visual interest',
+      'Don\'t draw every detail - suggest textures instead',
+      'Keep checking your reference frequently',
+      'Take breaks to rest your eyes'
+    ],
+    difficulty: 'medium'
+  },
+  {
+    id: '4',
+    title: 'Light & Shadow',
+    description: 'Add shading to create depth and three-dimensionality.',
+    detailedInstructions: `Shading transforms a flat drawing into a three-dimensional representation. Observe your reference carefully for light and shadow patterns.
+
+1. Identify the light source direction
+2. Map out the darkest shadow areas first
+3. Build up mid-tones gradually
+4. Preserve the lightest areas (highlights)
+
+Work slowly and build up values in layers rather than pressing too hard!`,
+    tips: [
+      'Squint to see value patterns more clearly',
+      'Use a value scale to match tones',
+      'Blend carefully to avoid smudging',
+      'Cast shadows anchor objects to their surface'
+    ],
+    difficulty: 'hard'
+  },
+  {
+    id: '5',
+    title: 'Final Touches',
+    description: 'Refine, clean up, and add finishing details.',
+    detailedInstructions: `The final step is about refinement and polish. Step back and evaluate your work as a whole.
+
+1. Strengthen key contours and focal points
+2. Clean up any stray marks or smudges
+3. Adjust values for better contrast
+4. Add any final details or accents
+
+Congratulations! Take a photo of your work and compare it to your reference!`,
+    tips: [
+      'Use a kneaded eraser to lift highlights',
+      'Darken your darkest darks for more punch',
+      'Sign your work when you\'re satisfied',
+      'Compare side-by-side with your reference'
+    ],
+    difficulty: 'easy'
+  }
+];
+

@@ -12,3 +12,18 @@ export interface SketchSettings {
   lineWeight: number;
   shadowThreshold: number;
 }
+
+export interface Step {
+  id: string;
+  title: string;
+  description: string;
+  detailedInstructions: string;
+  tips: string[];
+  difficulty: 'easy' | 'medium' | 'hard';
+}
+
+export interface UserNote {
+  stepId: string;
+  content: string;
+  timestamp: Date;
+}

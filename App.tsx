@@ -3,6 +3,7 @@ import { UploadScreen } from './screens/UploadScreen';
 import { GenerateScreen } from './screens/GenerateScreen';
 import { LearningScreen } from './screens/LearningScreen';
 import { Screen } from './types';
+import { ImageProvider } from './context/ImageContext';
 
 const App: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<Screen>('upload');
@@ -13,8 +14,8 @@ const App: React.FC = () => {
         return <UploadScreen onNavigate={() => setCurrentScreen('generate')} />;
       case 'generate':
         return (
-          <GenerateScreen 
-            onNavigateNext={() => setCurrentScreen('learning')} 
+          <GenerateScreen
+            onNavigateNext={() => setCurrentScreen('learning')}
             onNavigateBack={() => setCurrentScreen('upload')}
           />
         );
@@ -26,10 +27,11 @@ const App: React.FC = () => {
   };
 
   return (
-    <>
+    <ImageProvider>
       {renderScreen()}
-    </>
+    </ImageProvider>
   );
 };
 
 export default App;
+
