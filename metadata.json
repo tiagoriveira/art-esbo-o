@@ -1,0 +1,5 @@
+{
+  "name": "SketchCoach",
+  "description": "A comprehensive drawing lesson application featuring reference uploading, sketch generation settings, and guided step-by-step learning.",
+  "requestFramePermissions": []
+}
